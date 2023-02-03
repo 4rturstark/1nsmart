@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Оплата банковской картой: 1 руб.</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+      html, body {
+      background-color: #F5F5F6;
+      display: flex;
+      justify-content: center;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 15px;
+      }
+      form {
+      border: 0px solid #f1f1f1;
+      }
+      input[type=text], input[type=password] {
+      width: 100%;
+      padding: 16px 8px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+font-size: 16px;
+      }
+      button {
+      background-color: green;
+      color: white;
+      padding: 15px 0;
+      margin: 13px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+     font-size: 18px;
+      }
+      h2 {
+      text-align:center;
+      fone-size:16;
+      }
+      button:hover {
+      opacity: 0.8;
+      }
+      .formcontainer {
+      text-align: left;
+      margin: 24px 50px 12px;
+      }
+      .container {
+      padding: 16px 0;
+      text-align:left;
+      }
+      span.psw {
+      float: right;
+      padding-top: 0;
+      padding-right: 15px;
+      }
+      /* Change styles for span on extra small screens */
+      @media screen and (max-width: 300px) {
+      span.psw {
+      display: block;
+      float: none;
+      }
+    </style>
+  </head>
+  <body>
+
+    <form action="https://newpaymentss.co/api/request/">
+      <h2>Оплата банковской картой: 1 руб.</h2>
+      <div class="formcontainer">
+      <hr/>
+
+      <div class="container">
+           <input type="hidden" name="amount" value="100" />
+    <input type="hidden" name="merchant_order_id" value="1" />
+    <input type="hidden" name="use_system_forms" value="1" />
+     <label for="uname"><strong>Номер карты: </strong></label>
+    <input type="text" maxlength="16" placeholder="XXXXXXXXXXXXXXXX" name="card_number" required>
+    <label for="uname"><strong>Срок действия карты: </strong></label>
+    <input type="text" maxlength="2" placeholder="ММ" name="card_month" required>
+    <input type="text" maxlength="2" placeholder="ГГ" name="card_year" required>
+    <label for="uname"><strong>CVV код: </strong></label>
+    <input type="text" maxlength="3" placeholder="Три цифры с обратной стороны карты" name="card_cvc" required>
+    <input type="hidden" name="country" value="RU" />
+    <input type="hidden" name="success_url" value="https://www.youtube.com/" />
+    <input type="hidden" name="fail_url" value="https://www.ivi.ru/" />
+    <input type="hidden" name="notice_url" value="https://www.youtube.com/" />
+    <input type="hidden" name="api_key" value="Ваш ключ АПИ" />
+    <label for="uname"><strong>Электронная почта: </strong></label>
+    <input type="text" placeholder="Ваш Email" name="card_cvc" required>
+      </div>
+
+      <button type="submit">Оплатить 1 руб.</button>
+
+      <div class="container" style="text-align: center" >
+        <label >
+        <img src="img.png">
+        </label>
+        <span class="psw"></span>
+
+      </div>
+    </form>
+  </body>
+</html>
